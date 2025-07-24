@@ -1,2 +1,2 @@
-./team_manager/Configs/Release.xcconfig
-./team_manager/Configs/Debug.xcconfig
+team_manager/Configs/Debug.xcconfig
+team_manager/Configs/Release.xcconfig
