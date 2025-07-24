@@ -14,6 +14,8 @@ struct ContentView: View {
 
     var body: some View {
         NavigationSplitView {
+            Text(Bundle.main.supabaseURL)
+            Text(String(Bundle.main.supabaseKey))
             List {
                 ForEach(items) { item in
                     NavigationLink {
@@ -40,6 +42,7 @@ struct ContentView: View {
     }
 
     private func addItem() {
+        print(Bundle.main.infoDictionary ?? [:])
         withAnimation {
             let newItem = Item(timestamp: Date())
             modelContext.insert(newItem)
